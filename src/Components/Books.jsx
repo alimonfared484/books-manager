@@ -1,22 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { getBooks } from "../data/data";
-import { CURRENTTLINE } from "../helpers/colors";
+import { CURRENTTLINE, FOREGROUND } from "../helpers/colors";
+
+import "./ComponentCss/Books.css"
 
 const Books = () => {
     const books = getBooks();
 
     return (
-        <div className="d-flex col-5">
-            <nav className="col-12" style={{borderLeft: `solid 1px ${CURRENTTLINE}`, padding: "1rem"}}>
-                <input type="text" className="form-control mb-4" placeholder="جستجوی کتاب" />
+        <div className="d-flex col-12">
+            <nav className="col-5 ml-4 my-nav" style={{borderLeft: `solid 1px ${CURRENTTLINE}`, padding: "1rem"}}>
+                <div className="d-flex">
+                    <input type="text" className="form-control mb-4 search-box" placeholder="جستجوی کتاب" />
+                    <i className="fas fa-search search-icon"/>
+                </div>
+                <div className="book-name-container">
                 {
                     books.map((book) => (
-                        <Link className="d-block" to={`/books/${book.number}`} key={book.number} >
+                        <Link className="d-block book-name" to={`/books/${book.number}`} key={book.number} >
                             {book.name}
                         </Link>
                     ))
                 }
+                </div>
             </nav>
+            <Outlet/>
         </div>
     )
 }

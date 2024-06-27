@@ -1,0 +1,47 @@
+
+.my-nav {
+    overflow-y: scroll;
+    max-height: 77vh;
+}
+
+.search-box {
+    background-color: transparent;
+    border: 1px solid #BD93F9;
+    color: #F8F8F2!important;
+    padding-left: 40px;
+}
+.search-box:focus {
+    background-color: transparent;
+    border-color: #BD93F9;
+    box-shadow: 0 0 0 2.5px #bd93f97d;
+}
+.search-box::placeholder {
+    color: #6272A4;
+}
+
+.search-icon {
+    transform: translate(30px, 10px);
+    color: #44475A;
+    cursor: text;
+}
+
+.book-name-container {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    scrollbar-width: none;
+}
+
+.book-name {
+    color: #F8F8F2;
+    margin: 10px 0;
+    padding: 8px 20px 8px 90px;
+    border: 1px solid #FFB86C;
+    border-radius: 5px;
+}
+
+.book-name:hover {
+    color: #8BE9FD;
+    border-color: #BD93F9;
+}
