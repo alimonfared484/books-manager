@@ -28,7 +28,7 @@
 
 .search-icon {
     transform: translate(30px, 10px);
-    color: #44475A;
+    color: #6272A4;
     cursor: text;
 }
 
@@ -44,11 +44,12 @@
     color: #F8F8F2;
     margin: 10px 0;
     padding: 8px 20px 8px 90px;
-    border: 1px solid #FFB86C;
+    border: 1px solid #F8F8F2;
     border-radius: 5px;
+    text-decoration: none !important;
 }
 
 .book-name:hover {
     color: #8BE9FD;
-    border-color: #BD93F9;
+    border-color: #FFB86C !important;
 }
