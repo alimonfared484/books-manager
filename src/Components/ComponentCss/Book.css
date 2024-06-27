@@ -11,7 +11,7 @@
 
 
 .image-card {
-    width: 350px;
+    width: 340px;
     height: 250px;
     border-radius: 20px 20px 0 0;
     border: 2px solid #44475A;
@@ -21,8 +21,9 @@
 .my-body-card {
     padding: 10px;
     border: 1px solid #44475A;
-    width: 350px;
+    width: 340px;
     border-radius: 0 0 20px 20px;
+    margin-bottom: 10px;
 }
 
 .text-book {

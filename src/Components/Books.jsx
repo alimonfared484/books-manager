@@ -8,9 +8,9 @@ const Books = () => {
     const books = getBooks();
 
     return (
-        <div className="d-flex col-12">
-            <nav className="col-5 ml-4 my-nav" style={{borderLeft: `solid 1px ${CURRENTTLINE}`, padding: "1rem"}}>
-                <div className="d-flex">
+        <div className="d-flex flex-column flex-md-row col-12">
+            <nav className="col-12 col-md-5 ml-4 my-nav" style={{borderLeft: `solid 1px ${CURRENTTLINE}`,borderBottom: `solid 1px ${CURRENTTLINE}`, padding: "1rem"}}>
+                <div className="d-flex search-box-container">
                     <input type="text" className="form-control mb-4 search-box" placeholder="جستجوی کتاب" />
                     <i className="fas fa-search search-icon"/>
                 </div>

@@ -4,6 +4,13 @@
     max-height: 77vh;
 }
 
+.search-box-container {
+    background-color: #282a36;
+    position: sticky;
+    top: -16px;
+
+}
+
 .search-box {
     background-color: transparent;
     border: 1px solid #BD93F9;
